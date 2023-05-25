@@ -2,7 +2,7 @@
 challenge 19
 
 ## Description
-none
+For this project we wanted to great an app that gives the user the ability to store code snippets. When the user enters a code it saves to to not only local storage but a database created in web. The database allows the user to store their data and reload it when they refresh the page. This also allows the users to go offline and save some data. When the user clicks install the webpage becomes an app independent of the browser where the user can continue to add code snippets and save it to the IndexedDB. This app uses verious webpack plug-ins to create the functionality we wanted to have for this app.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -13,7 +13,7 @@ none
 * [Questions](#questions)
 
 ## Installation
-none
+npm install in root package.json, not client or server package.json, to install each package concurrently using the devDependencies add on.
 
 ## Usage
 
@@ -22,7 +22,7 @@ A link to the webpage is provided here: [Webpage](https://github.com/sweetkloid/
 
 
 ## Contributing
-none
+Thanks to the teacher, TA's and classmates for help on this project.
 
 ## Tests
 none

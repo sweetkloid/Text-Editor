@@ -14,12 +14,12 @@ const initdb = async () =>
 
 // TODO: Add logic to a method that accepts some content and adds it to the database
 
-export const putDb = async (content) => {
+export const putDb = async (value) => {
   try {
     const jatedb = await openDB('jate', 1);
     const tx = jatedb.transaction('jate', 'readwrite');
     const store = tx.objectStore('jate');
-    const request= store.add({content});
+    const request= store.add({value});
     const result = await request;
     console.log('Content added to database:', result);
   } catch (error) {
@@ -35,7 +35,7 @@ export const getDb = async () => {
     const tx = jatedb.transaction('jate', 'readonly');
     const store = tx.objectStore('jate');
     const result = await store.getAll();
-    console.log('Content retrieved from database:', result);
+    console.log('result.value', result);
     return result;
   } catch (error) {
     console.error('Error retrieving content from database:', error);
